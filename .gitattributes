@@ -1,0 +1,13 @@
+# Keep shell scripts and the Makefile LF-only: they run on the device / in WSL,
+# and CRLF breaks them (the launcher already has to strip CR at package time).
+*.sh   text eol=lf
+Makefile text eol=lf
+*.py   text eol=lf
+*.c    text eol=lf
+*.h    text eol=lf
+*.S    text eol=lf
+*.inc  text eol=lf
+*.md   text eol=lf
+
+# Vendored zlib: keep as-is, do not renormalise.
+third_party/zlib/** -text

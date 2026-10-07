@@ -1,0 +1,29 @@
+# ---- Not redistributable: the game APK and its extracted libs ----
+*.apk
+/libs/
+/assets/assetpack/
+# extracted global-metadata / apk contents used for analysis
+/scratch/
+
+# ---- Build output ----
+/build/
+/package/unityhost
+/tests/hello
+
+# ---- On-device / runtime data ----
+/dist/
+/userdata/
+/device-logs/
+swapfile
+*.raw
+*.log
+
+# ---- Archives (the extracted tree is committed instead) ----
+*.tgz
+*.zip
+
+# ---- OS / editor noise ----
+.DS_Store
+Thumbs.db
+*~
+*.swp
